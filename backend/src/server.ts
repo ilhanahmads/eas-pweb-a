@@ -7,9 +7,9 @@ dotenv.config();
 
 const app = express();
 
-// Enable CORS for 3001
+// Enable CORS for 3000
 app.use(cors({
-  origin: 'http://localhost:3001',
+  origin: 'http://localhost:3000',
 }));
 
 // Redirect root to Admin panel
@@ -29,8 +29,8 @@ const start = async () => {
 
   // Add your own express routes here
 
-  app.listen(3000, () => {
-    console.log('Server is running on port 3000');
+  app.listen(3001, () => {
+    console.log('Server is running on port 3001');
   });
 };
 
